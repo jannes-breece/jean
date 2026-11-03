@@ -64,6 +64,7 @@ pub async fn set_window_vibrancy(app: AppHandle, enabled: bool) -> Result<(), St
                         radius: Some(12.0),
                         state: Some(tauri::window::EffectState::Active),
                         color: None,
+                        interactive: false,
                     })
                     .map_err(|error| error.to_string())?;
             } else {
